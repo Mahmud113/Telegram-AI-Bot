@@ -1,7 +1,4 @@
 # Importing necessary libraries
-import time
-# import os
-from dotenv import load_dotenv
 from telebot import TeleBot  # For creating the Telegram bot
 from telebot import types  # For defining bot commands and message types
 from logic import Text2ImageAPI  # Custom module for handling AI-based text-to-image generation
