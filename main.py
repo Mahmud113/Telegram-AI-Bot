@@ -65,6 +65,15 @@ def generation_with_prompt(message):
     prompt_text = message.text  # Extract the user's prompt
     user_id = message.chat.id  # Get the user's chat ID
 
+    if message.content_type != 'text':
+        bot.send_message(message.chat.id, 'Invalid input type. Please send text for the image prompt.')
+        return
+
+    prompt_text = message.text.strip()
+    if not prompt_text:
+        bot.send_message(message.chat.id, 'Invalid input. Please enter text for the image prompt.')
+        return
+    
     # Informing the user about the generation process
     bot.send_chat_action(message.chat.id, 'typing')
     time.sleep(0.5)
