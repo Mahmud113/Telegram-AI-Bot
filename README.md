@@ -27,8 +27,8 @@ Visual Prompt is a Telegram bot that generates AI-based images from user input p
     Create a `config.py` file in the root directory and add your Telegram Bot Token and Fusion Brain API keys:
     ```env
     TELEGRAM_BOT_TOKEN='your-telegram-bot-token'
-    AI_KEY_1='your-deepai-api-key-1'
-    AI_KEY_2='your-deepai-api-key-2'
+    AI_KEY_1='your-fusionbrain-api-key-1'
+    AI_KEY_2='your-fusionbrain-api-key-2'
     ```
 
 ## Usage
